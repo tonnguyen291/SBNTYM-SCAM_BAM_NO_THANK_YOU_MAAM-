@@ -1,0 +1,9 @@
+{
+  "name": "proofpulse-backend",
+  "version": "0.1.0",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
+

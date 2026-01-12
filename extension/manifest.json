@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "ProofPulse Scanner",
+    "version": "0.1.0",
+    "description": "User-click scan of the current page for scam risk.",
+    "action": {
+        "default_title": "ProofPulse",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "scripting"
+    ],
+    "host_permissions": [
+        "http://127.0.0.1:8787/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "styles.css"
+            ]
+        }
+    ]
+}
