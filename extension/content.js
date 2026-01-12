@@ -6,7 +6,7 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
         showResults(msg.data);
     } else if (msg.type === "SCAN_ERROR") {
         hideLoading();
-        alert("ProofPulse Error: " + msg.error);
+        alert("SBNTYM Error: " + msg.error);
     }
 });
 
@@ -128,7 +128,7 @@ function showResults(data) {
 
     div.innerHTML = `
         <div class="pp-header ${themeClass}">
-            <div class="pp-title">${shieldIcon} ProofPulse</div>
+            <div class="pp-title">${shieldIcon} SBNTYM</div>
             <button class="pp-close-btn">&times;</button>
         </div>
         

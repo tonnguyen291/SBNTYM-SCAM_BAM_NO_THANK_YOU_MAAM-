@@ -143,6 +143,6 @@ Task: Analyze this image for scam indicators. logic:
 });
 
 app.listen(8787, () => {
-  console.log("ProofPulse backend running on http://localhost:8787");
+  console.log("SBNTYM backend running on http://localhost:8787");
 });
 

@@ -1,10 +1,10 @@
 {
     "manifest_version": 3,
-    "name": "ProofPulse Scanner",
+    "name": "SBNTYM Scanner",
     "version": "0.1.0",
     "description": "User-click scan of the current page for scam risk.",
     "action": {
-        "default_title": "ProofPulse",
+        "default_title": "SBNTYM",
         "default_popup": "popup.html"
     },
     "permissions": [

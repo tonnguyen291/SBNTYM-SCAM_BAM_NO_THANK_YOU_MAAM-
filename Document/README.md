@@ -1,22 +1,22 @@
-# ProofPulse
+# SBNTYM
 
 **Real-time AI fraud detection powered by Gen Digital guidelines**
 
-ProofPulse is a Chrome browser extension that uses advanced AI (Google Gemini 2.0 Flash) to analyze web content for scam indicators in real-time. Users can select any portion of a webpage, and ProofPulse will provide an instant risk assessment based on Norton Lock Policy and Gen Digital fraud detection guidelines.
+SBNTYM is a Chrome browser extension that uses advanced AI (Google Gemini 2.0 Flash) to analyze web content for scam indicators in real-time. Users can select any portion of a webpage, and SBNTYM will provide an instant risk assessment based on Norton Lock Policy and Gen Digital fraud detection guidelines.
 
-![ProofPulse Banner](https://img.shields.io/badge/ProofPulse-AI%20Fraud%20Detection-blue?style=for-the-badge)
+![SBNTYM Banner](https://img.shields.io/badge/SBNTYM-AI%20Fraud%20Detection-blue?style=for-the-badge)
 ![Version](https://img.shields.io/badge/version-0.1.0-green?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-orange?style=flat-square)
 
 ---
 
-## 💭 The Story Behind ProofPulse
+## 💭 The Story Behind SBNTYM
 
 This extension was born from a deeply personal experience. My grandmother lost $3,500 to a sophisticated deepfake phone call scam—a painful reminder of how vulnerable our loved ones are to modern cyber threats.
 
-I created ProofPulse as an educational project to better understand cyberattacks and fraud detection mechanisms. The development is based on **Norton Lock Policy** and **Gen Digital fraud detection guidelines**, with special reference to their **2025 Quarterly Report** on emerging scam patterns.
+I created SBNTYM as an educational project to better understand cyberattacks and fraud detection mechanisms. The development is based on **Norton Lock Policy** and **Gen Digital fraud detection guidelines**, with special reference to their **2025 Quarterly Report** on emerging scam patterns.
 
-> **Special Thanks**: The name "ProofPulse" and the project's direction were inspired and honored by **Jennifer Johnson** (Restoration Manager at Gen Digital) and her incredible team. Their expertise and dedication to protecting consumers from fraud have been invaluable to this project's development.
+> **Special Thanks**: The name "SBNTYM" and the project's direction were inspired and honored by **Jennifer Johnson** (Restoration Manager at Gen Digital) and her incredible team. Their expertise and dedication to protecting consumers from fraud have been invaluable to this project's development.
 
 This has been a fun and deeply educational journey that taught me not just about technical implementation, but about the real-world impact of cybersecurity. Every line of code is written with the hope that it might help prevent someone else's grandmother from falling victim to these increasingly sophisticated scams.
 
@@ -38,7 +38,7 @@ This has been a fun and deeply educational journey that taught me not just about
 
 ## 🏗️ Architecture
 
-ProofPulse consists of three main components:
+SBNTYM consists of three main components:
 
 ### 1. **Backend Server** (`server.js`)
 - Express.js server running on `localhost:8787`
@@ -102,7 +102,7 @@ npm start
 
 You should see:
 ```
-ProofPulse backend running on http://localhost:8787
+SBNTYM backend running on http://localhost:8787
 ```
 
 #### 5. Load the Extension in Chrome
@@ -111,7 +111,7 @@ ProofPulse backend running on http://localhost:8787
 2. Enable **Developer mode** (toggle in top-right corner)
 3. Click **Load unpacked**
 4. Select the `extension` folder from this project
-5. The ProofPulse icon should appear in your extensions toolbar
+5. The SBNTYM icon should appear in your extensions toolbar
 
 ---
 
@@ -120,7 +120,7 @@ ProofPulse backend running on http://localhost:8787
 ### Scanning a Webpage
 
 1. **Navigate** to any webpage you want to analyze
-2. **Click** the ProofPulse extension icon in your toolbar
+2. **Click** the SBNTYM extension icon in your toolbar
 3. **Click** the "New Scan" button in the popup
 4. **Select** the area you want to analyze by clicking and dragging
 5. **Wait** for the AI analysis (typically 2-5 seconds)
@@ -138,7 +138,7 @@ ProofPulse backend running on http://localhost:8787
 - **80-100**: Dangerous (red theme)
 
 #### Detection Criteria
-ProofPulse analyzes content for:
+SBNTYM analyzes content for:
 - **Visual Deception**: Fake lock icons, OS warning spoofing, browser chrome imitation
 - **Heuristic Analysis**: High-entropy strings, mismatched branding, scareware patterns
 - **Urgency & Coercion**: Demands for immediate action, fear-based messaging
@@ -206,7 +206,7 @@ Scam/
 ## 🔒 Security & Privacy
 
 - **Local Processing**: Screenshots are processed locally and sent only to Google's Gemini API
-- **No Data Storage**: ProofPulse does not store or log user data
+- **No Data Storage**: SBNTYM does not store or log user data
 - **HTTPS Only**: Backend should be served over HTTPS in production
 - **API Key Security**: Never commit API keys to version control
 

@@ -1,10 +1,10 @@
-# ProofPulse - C4 Architecture Documentation
+# SBNTYM - C4 Architecture Documentation
 
-This document provides a comprehensive architectural overview of ProofPulse using the C4 model (Context, Container, Component, and Code).
+This document provides a comprehensive architectural overview of SBNTYM using the C4 model (Context, Container, Component, and Code).
 
 ## 💭 Project Background
 
-ProofPulse is an educational project created to understand cyberattacks and fraud detection mechanisms, inspired by a personal experience where my grandmother lost $3,500 to a deepfake phone call scam. The system is built on **Norton Lock Policy** and **Gen Digital fraud detection guidelines**, particularly their **2025 Quarterly Report**.
+SBNTYM is an educational project created to understand cyberattacks and fraud detection mechanisms, inspired by a personal experience where my grandmother lost $3,500 to a deepfake phone call scam. The system is built on **Norton Lock Policy** and **Gen Digital fraud detection guidelines**, particularly their **2025 Quarterly Report**.
 
 Special thanks to **Jennifer Johnson** (Restoration Manager at Gen Digital) and her team for inspiring the project's name and direction.
 
@@ -23,23 +23,23 @@ Special thanks to **Jennifer Johnson** (Restoration Manager at Gen Digital) and 
 
 ## Level 1: System Context
 
-The System Context diagram shows how ProofPulse fits into the broader ecosystem and its interactions with external systems and users.
+The System Context diagram shows how SBNTYM fits into the broader ecosystem and its interactions with external systems and users.
 
 ```mermaid
 graph TB
     User["👤 User<br/>(Web Browser User)"]
-    ProofPulse["🛡️ ProofPulse<br/>(Scam Detection System)"]
+    SBNTYM["🛡️ SBNTYM<br/>(Scam Detection System)"]
     Gemini["🤖 Google Gemini API<br/>(AI Vision Model)"]
     Website["🌐 Target Website<br/>(Any Web Page)"]
     
     User -->|"Browses and selects content"| Website
-    User -->|"Initiates scan"| ProofPulse
-    ProofPulse -->|"Captures screenshot"| Website
-    ProofPulse -->|"Sends image for analysis"| Gemini
-    Gemini -->|"Returns risk assessment"| ProofPulse
-    ProofPulse -->|"Displays results"| User
+    User -->|"Initiates scan"| SBNTYM
+    SBNTYM -->|"Captures screenshot"| Website
+    SBNTYM -->|"Sends image for analysis"| Gemini
+    Gemini -->|"Returns risk assessment"| SBNTYM
+    SBNTYM -->|"Displays results"| User
     
-    style ProofPulse fill:#3b82f6,stroke:#1e40af,color:#fff
+    style SBNTYM fill:#3b82f6,stroke:#1e40af,color:#fff
     style Gemini fill:#34d399,stroke:#059669,color:#fff
     style User fill:#f59e0b,stroke:#d97706,color:#fff
     style Website fill:#8b5cf6,stroke:#6d28d9,color:#fff
@@ -50,7 +50,7 @@ graph TB
 | Actor/System | Role | Interaction |
 |--------------|------|-------------|
 | **User** | Primary actor | Browses websites, initiates scans, reviews results |
-| **ProofPulse** | Core system | Captures screenshots, analyzes content, displays results |
+| **SBNTYM** | Core system | Captures screenshots, analyzes content, displays results |
 | **Google Gemini API** | External AI service | Provides vision-based scam detection |
 | **Target Website** | Content source | Provides content to be analyzed |
 
@@ -58,7 +58,7 @@ graph TB
 
 ## Level 2: Container Diagram
 
-The Container diagram shows the high-level technical building blocks of ProofPulse.
+The Container diagram shows the high-level technical building blocks of SBNTYM.
 
 ```mermaid
 graph TB
@@ -334,7 +334,7 @@ graph TB
 graph TB
     subgraph Client["Client Machine"]
         Browser["Chrome Browser"]
-        Extension["ProofPulse Extension"]
+        Extension["SBNTYM Extension"]
     end
     
     subgraph Local["Local Environment"]
